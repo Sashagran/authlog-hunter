@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "authlog-hunter"
+version = "1.0.0"
+description = "Detect attacks in Linux auth logs and map them to MITRE ATT&CK"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Alexander Zheltov" }]
+requires-python = ">=3.10"
+keywords = ["security", "siem", "threat-detection", "mitre-attack", "blue-team", "linux"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Topic :: Security",
+  "Operating System :: POSIX :: Linux",
+]
+
+[project.scripts]
+authlog-hunter = "authlog_hunter.cli:main"
+
+[tool.setuptools]
+packages = ["authlog_hunter"]
