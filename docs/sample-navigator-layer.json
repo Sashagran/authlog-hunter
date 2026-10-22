@@ -1,0 +1,70 @@
+{
+  "name": "authlog-hunter findings",
+  "versions": {
+    "attack": "15",
+    "navigator": "5.0.0",
+    "layer": "4.5"
+  },
+  "domain": "enterprise-attack",
+  "description": "Techniques observed in Linux authentication logs. Score: 1=low .. 4=critical.",
+  "gradient": {
+    "colors": [
+      "#fff3b0",
+      "#ff9f43",
+      "#e63946"
+    ],
+    "minValue": 1,
+    "maxValue": 4
+  },
+  "techniques": [
+    {
+      "techniqueID": "T1078",
+      "score": 4,
+      "comment": "AH-003 Successful SSH login after repeated failures",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1078.003",
+      "score": 3,
+      "comment": "AH-004 Direct SSH login as root",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1098",
+      "score": 3,
+      "comment": "AH-009 User added to privileged group",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1110.001",
+      "score": 2,
+      "comment": "AH-001 SSH password brute force",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1110.003",
+      "score": 3,
+      "comment": "AH-002 SSH password spraying / account enumeration",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1136.001",
+      "score": 4,
+      "comment": "AH-008 New local account created; AH-010 Backdoor account: created and immediately granted privileges",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1548.003",
+      "score": 3,
+      "comment": "AH-006 Interactive shell or sensitive file access via sudo; AH-007 Unauthorized sudo attempts",
+      "enabled": true,
+      "showSubtechniques": true
+    }
+  ]
+}

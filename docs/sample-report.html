@@ -1,0 +1,137 @@
+<!doctype html><html lang=en><head><meta charset=utf-8>
+<meta name=viewport content='width=device-width,initial-scale=1'>
+<title>authlog-hunter report</title><style>
+:root{--bg:#0d1117;--card:#161b22;--border:#30363d;--fg:#e6edf3;--muted:#8b949e;
+--critical:#ff4d4f;--high:#ff7b39;--medium:#e3b341;--low:#58a6ff}
+*{box-sizing:border-box}body{margin:0;font:15px/1.5 -apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--fg)}
+main{max-width:1100px;margin:0 auto;padding:32px 16px}h1{margin:0 0 4px}p.sub{color:var(--muted);margin:0 0 24px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:28px}
+.tile{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px 16px}
+.tile b{display:block;font-size:28px}.tile span{color:var(--muted);font-size:13px;text-transform:uppercase;letter-spacing:.04em}
+.f{background:var(--card);border:1px solid var(--border);border-left:4px solid var(--sev);border-radius:10px;padding:16px 18px;margin-bottom:12px}
+.f h3{margin:0 0 6px;font-size:16px}.badge{display:inline-block;padding:1px 8px;border-radius:999px;font-size:12px;font-weight:700;
+background:var(--sev);color:#0d1117;margin-right:8px;text-transform:uppercase}.meta{color:var(--muted);font-size:13px}
+a{color:#58a6ff}code{background:#0b0f14;padding:2px 6px;border-radius:6px;font-size:13px}
+details{margin-top:8px}summary{cursor:pointer;color:var(--muted);font-size:13px}
+</style></head><body><main>
+<h1>authlog-hunter report</h1>
+<p class=sub>Source: <code>samples/auth.log</code> &middot; generated 2026-10-22 17:28 &middot; v1.0.0</p>
+<div class=tiles>
+<div class=tile><span>Events</span><b>108</b></div>
+<div class=tile><span>Findings</span><b>10</b></div>
+<div class=tile><span>Critical</span><b>2</b></div>
+<div class=tile><span>High</span><b>6</b></div>
+<div class=tile><span>Medium</span><b>2</b></div>
+<div class=tile><span>Low</span><b>0</b></div>
+</div>
+<div class=f style='--sev:var(--critical)'><h3><span class=badge>critical</span>AH-003 &mdash; Successful SSH login after repeated failures</h3><div class=meta><a href='https://attack.mitre.org/techniques/T1078/' target=_blank rel=noopener>T1078 Valid Accounts</a> &middot; Initial Access &middot; 2026-10-21 09:40:05 &rarr; 09:42:23</div><p>203.0.113.77 logged in as &#x27;deploy&#x27; via password after 24 failed attempts. Credentials are likely compromised.</p><details><summary>Evidence (25 lines)</summary><pre><code>Oct 21 09:40:05 web-prod-01 sshd[29670]: Failed password for deploy from 203.0.113.77 port 51014 ssh2
+Oct 21 09:40:11 web-prod-01 sshd[62798]: Failed password for deploy from 203.0.113.77 port 55009 ssh2
+Oct 21 09:40:18 web-prod-01 sshd[27371]: Failed password for deploy from 203.0.113.77 port 55585 ssh2
+Oct 21 09:40:25 web-prod-01 sshd[61113]: Failed password for deploy from 203.0.113.77 port 37375 ssh2
+Oct 21 09:40:31 web-prod-01 sshd[29840]: Failed password for deploy from 203.0.113.77 port 59224 ssh2
+Oct 21 09:40:39 web-prod-01 sshd[25917]: Failed password for deploy from 203.0.113.77 port 50858 ssh2
+Oct 21 09:40:43 web-prod-01 sshd[54762]: Failed password for deploy from 203.0.113.77 port 50436 ssh2
+Oct 21 09:40:49 web-prod-01 sshd[49909]: Failed password for deploy from 203.0.113.77 port 54988 ssh2
+Oct 21 09:40:54 web-prod-01 sshd[54288]: Failed password for deploy from 203.0.113.77 port 42629 ssh2
+Oct 21 09:40:57 web-prod-01 sshd[46484]: Failed password for deploy from 203.0.113.77 port 45098 ssh2
+Oct 21 09:40:59 web-prod-01 sshd[6622]: Failed password for deploy from 203.0.113.77 port 41222 ssh2
+Oct 21 09:41:05 web-prod-01 sshd[35548]: Failed password for deploy from 203.0.113.77 port 46112 ssh2
+Oct 21 09:41:13 web-prod-01 sshd[3434]: Failed password for deploy from 203.0.113.77 port 34572 ssh2
+Oct 21 09:41:21 web-prod-01 sshd[42909]: Failed password for deploy from 203.0.113.77 port 36407 ssh2
+Oct 21 09:41:30 web-prod-01 sshd[44712]: Failed password for deploy from 203.0.113.77 port 33725 ssh2
+Oct 21 09:41:35 web-prod-01 sshd[4424]: Failed password for deploy from 203.0.113.77 port 39872 ssh2
+Oct 21 09:41:44 web-prod-01 sshd[47988]: Failed password for deploy from 203.0.113.77 port 55913 ssh2
+Oct 21 09:41:49 web-prod-01 sshd[36059]: Failed password for deploy from 203.0.113.77 port 41654 ssh2
+Oct 21 09:41:56 web-prod-01 sshd[39008]: Failed password for deploy from 203.0.113.77 port 39069 ssh2
+Oct 21 09:41:59 web-prod-01 sshd[57127]: Failed password for deploy from 203.0.113.77 port 52305 ssh2
+Oct 21 09:42:03 web-prod-01 sshd[51484]: Failed password for deploy from 203.0.113.77 port 46574 ssh2
+Oct 21 09:42:05 web-prod-01 sshd[37728]: Failed password for deploy from 203.0.113.77 port 51007 ssh2
+Oct 21 09:42:14 web-prod-01 sshd[2038]: Failed password for deploy from 203.0.113.77 port 39707 ssh2
+Oct 21 09:42:18 web-prod-01 sshd[31533]: Failed password for deploy from 203.0.113.77 port 34854 ssh2
+Oct 21 09:42:23 web-prod-01 sshd[6264]: Accepted password for deploy from 203.0.113.77 port 51515 ssh2</code></pre></details></div>
+<div class=f style='--sev:var(--critical)'><h3><span class=badge>critical</span>AH-010 &mdash; Backdoor account: created and immediately granted privileges</h3><div class=meta><a href='https://attack.mitre.org/techniques/T1136/001/' target=_blank rel=noopener>T1136.001 Create Account: Local Account</a> &middot; Persistence &middot; 2026-10-21 09:48:23 &rarr; 09:49:03</div><p>&#x27;sysupdate&#x27; was created and added to &#x27;sudo&#x27; 40 s later.</p><details><summary>Evidence (2 lines)</summary><pre><code>Oct 21 09:48:23 web-prod-01 useradd[60978]: new user: name=sysupdate, UID=998, GID=998, home=/var/lib/sysupdate, shell=/bin/bash, from=/dev/pts/1
+Oct 21 09:49:03 web-prod-01 usermod[58228]: add &#x27;sysupdate&#x27; to group &#x27;sudo&#x27;</code></pre></details></div>
+<div class=f style='--sev:var(--high)'><h3><span class=badge>high</span>AH-002 &mdash; SSH password spraying / account enumeration</h3><div class=meta><a href='https://attack.mitre.org/techniques/T1110/003/' target=_blank rel=noopener>T1110.003 Brute Force: Password Spraying</a> &middot; Credential Access &middot; 2026-10-21 03:12:04 &rarr; 03:17:40</div><p>198.51.100.23 tried 11 different accounts (10 of them do not exist on the host).</p><details><summary>Evidence (53 lines)</summary><pre><code>Oct 21 03:12:04 web-prod-01 sshd[2123]: Invalid user admin from 198.51.100.23 port 52138
+Oct 21 03:12:05 web-prod-01 sshd[42615]: Failed password for invalid user admin from 198.51.100.23 port 52138 ssh2
+Oct 21 03:12:13 web-prod-01 sshd[7854]: Invalid user admin from 198.51.100.23 port 36456
+Oct 21 03:12:14 web-prod-01 sshd[19672]: Failed password for invalid user admin from 198.51.100.23 port 36456 ssh2
+Oct 21 03:12:22 web-prod-01 sshd[50093]: Invalid user admin from 198.51.100.23 port 44821
+Oct 21 03:12:23 web-prod-01 sshd[61065]: Failed password for invalid user admin from 198.51.100.23 port 44821 ssh2
+Oct 21 03:12:35 web-prod-01 sshd[53127]: Invalid user test from 198.51.100.23 port 30408
+Oct 21 03:12:36 web-prod-01 sshd[62398]: Failed password for invalid user test from 198.51.100.23 port 30408 ssh2
+Oct 21 03:12:48 web-prod-01 sshd[38493]: Invalid user test from 198.51.100.23 port 44161
+Oct 21 03:12:49 web-prod-01 sshd[52801]: Failed password for invalid user test from 198.51.100.23 port 44161 ssh2
+Oct 21 03:12:58 web-prod-01 sshd[4003]: Invalid user test from 198.51.100.23 port 48009
+Oct 21 03:12:59 web-prod-01 sshd[51855]: Failed password for invalid user test from 198.51.100.23 port 48009 ssh2
+Oct 21 03:13:10 web-prod-01 sshd[59419]: Invalid user oracle from 198.51.100.23 port 57801
+Oct 21 03:13:11 web-prod-01 sshd[15001]: Failed password for invalid user oracle from 198.51.100.23 port 57801 ssh2
+Oct 21 03:13:18 web-prod-01 sshd[35518]: Invalid user oracle from 198.51.100.23 port 47336
+Oct 21 03:13:19 web-prod-01 sshd[35632]: Failed password for invalid user oracle from 198.51.100.23 port 47336 ssh2
+Oct 21 03:13:26 web-prod-01 sshd[44426]: Invalid user oracle from 198.51.100.23 port 55405
+Oct 21 03:13:27 web-prod-01 sshd[4305]: Failed password for invalid user oracle from 198.51.100.23 port 55405 ssh2
+Oct 21 03:13:44 web-prod-01 sshd[49267]: Invalid user postgres from 198.51.100.23 port 53056
+Oct 21 03:13:45 web-prod-01 sshd[39257]: Failed password for invalid user postgres from 198.51.100.23 port 53056 ssh2
+Oct 21 03:14:01 web-prod-01 sshd[2609]: Invalid user postgres from 198.51.100.23 port 59451
+Oct 21 03:14:02 web-prod-01 sshd[53755]: Failed password for invalid user postgres from 198.51.100.23 port 59451 ssh2
+Oct 21 03:14:20 web-prod-01 sshd[36541]: Invalid user postgres from 198.51.100.23 port 45977
+Oct 21 03:14:21 web-prod-01 sshd[50294]: Failed password for invalid user postgres from 198.51.100.23 port 45977 ssh2
+Oct 21 03:14:34 web-prod-01 sshd[37593]: Invalid user ubuntu from 198.51.100.23 port 54074
+Oct 21 03:14:35 web-prod-01 sshd[53323]: Failed password for invalid user ubuntu from 198.51.100.23 port 54074 ssh2
+Oct 21 03:14:45 web-prod-01 sshd[5377]: Invalid user ubuntu from 198.51.100.23 port 38577
+Oct 21 03:14:46 web-prod-01 sshd[47449]: Failed password for invalid user ubuntu from 198.51.100.23 port 38577 ssh2
+Oct 21 03:14:52 web-prod-01 sshd[60220]: Invalid user ubuntu from 198.51.100.23 port 31930
+Oct 21 03:14:53 web-prod-01 sshd[12148]: Failed password for invalid user ubuntu from 198.51.100.23 port 31930 ssh2
+Oct 21 03:14:57 web-prod-01 sshd[29800]: Invalid user git from 198.51.100.23 port 36287
+Oct 21 03:14:58 web-prod-01 sshd[63433]: Failed password for invalid user git from 198.51.100.23 port 36287 ssh2
+Oct 21 03:15:17 web-prod-01 sshd[17583]: Invalid user git from 198.51.100.23 port 57312
+Oct 21 03:15:18 web-prod-01 sshd[58513]: Failed password for invalid user git from 198.51.100.23 port 57312 ssh2
+Oct 21 03:15:37 web-prod-01 sshd[28987]: Invalid user user from 198.51.100.23 port 34913
+Oct 21 03:15:38 web-prod-01 sshd[23886]: Failed password for invalid user user from 198.51.100.23 port 34913 ssh2
+Oct 21 03:15:41 web-prod-01 sshd[19841]: Invalid user support from 198.51.100.23 port 44088
+Oct 21 03:15:42 web-prod-01 sshd[49567]: Failed password for invalid user support from 198.51.100.23 port 44088 ssh2
+Oct 21 03:15:48 web-prod-01 sshd[42544]: Invalid user support from 198.51.100.23 port 31833
+Oct 21 03:15:49 web-prod-01 sshd[31232]: Failed password for invalid user support from 198.51.100.23 port 31833 ssh2
+Oct 21 03:16:02 web-prod-01 sshd[5483]: Invalid user support from 198.51.100.23 port 42466
+Oct 21 03:16:03 web-prod-01 sshd[14658]: Failed password for invalid user support from 198.51.100.23 port 42466 ssh2
+Oct 21 03:16:13 web-prod-01 sshd[15008]: Invalid user guest from 198.51.100.23 port 53507
+Oct 21 03:16:14 web-prod-01 sshd[13551]: Failed password for invalid user guest from 198.51.100.23 port 53507 ssh2
+Oct 21 03:16:20 web-prod-01 sshd[26681]: Invalid user guest from 198.51.100.23 port 45861
+Oct 21 03:16:21 web-prod-01 sshd[41184]: Failed password for invalid user guest from 198.51.100.23 port 45861 ssh2
+Oct 21 03:16:40 web-prod-01 sshd[11467]: Invalid user ftpuser from 198.51.100.23 port 38286
+Oct 21 03:16:41 web-prod-01 sshd[15512]: Failed password for invalid user ftpuser from 198.51.100.23 port 38286 ssh2
+Oct 21 03:16:53 web-prod-01 sshd[41918]: Invalid user ftpuser from 198.51.100.23 port 42876
+Oct 21 03:16:54 web-prod-01 sshd[13748]: Failed password for invalid user ftpuser from 198.51.100.23 port 42876 ssh2
+... and 3 more lines</code></pre></details></div>
+<div class=f style='--sev:var(--high)'><h3><span class=badge>high</span>AH-006 &mdash; Interactive shell or sensitive file access via sudo</h3><div class=meta><a href='https://attack.mitre.org/techniques/T1548/003/' target=_blank rel=noopener>T1548.003 Abuse Elevation Control Mechanism: Sudo and Sudo Caching</a> &middot; Privilege Escalation &middot; 2026-10-21 09:45:23 &rarr; 09:45:23</div><p>&#x27;deploy&#x27; ran `/bin/bash` as root.</p><details><summary>Evidence (1 lines)</summary><pre><code>Oct 21 09:45:23 web-prod-01 sudo:    deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/bin/bash</code></pre></details></div>
+<div class=f style='--sev:var(--high)'><h3><span class=badge>high</span>AH-006 &mdash; Interactive shell or sensitive file access via sudo</h3><div class=meta><a href='https://attack.mitre.org/techniques/T1548/003/' target=_blank rel=noopener>T1548.003 Abuse Elevation Control Mechanism: Sudo and Sudo Caching</a> &middot; Privilege Escalation &middot; 2026-10-21 09:46:23 &rarr; 09:46:23</div><p>&#x27;deploy&#x27; ran `/usr/bin/cat /etc/shadow` as root.</p><details><summary>Evidence (1 lines)</summary><pre><code>Oct 21 09:46:23 web-prod-01 sudo:    deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow</code></pre></details></div>
+<div class=f style='--sev:var(--high)'><h3><span class=badge>high</span>AH-008 &mdash; New local account created</h3><div class=meta><a href='https://attack.mitre.org/techniques/T1136/001/' target=_blank rel=noopener>T1136.001 Create Account: Local Account</a> &middot; Persistence &middot; 2026-10-21 09:48:23 &rarr; 09:48:23</div><p>Account &#x27;sysupdate&#x27; created with UID 998 (system UID range, unusual for a human user).</p><details><summary>Evidence (1 lines)</summary><pre><code>Oct 21 09:48:23 web-prod-01 useradd[60978]: new user: name=sysupdate, UID=998, GID=998, home=/var/lib/sysupdate, shell=/bin/bash, from=/dev/pts/1</code></pre></details></div>
+<div class=f style='--sev:var(--high)'><h3><span class=badge>high</span>AH-009 &mdash; User added to privileged group</h3><div class=meta><a href='https://attack.mitre.org/techniques/T1098/' target=_blank rel=noopener>T1098 Account Manipulation</a> &middot; Persistence &middot; 2026-10-21 09:49:03 &rarr; 09:49:03</div><p>&#x27;sysupdate&#x27; was added to privileged group &#x27;sudo&#x27;.</p><details><summary>Evidence (1 lines)</summary><pre><code>Oct 21 09:49:03 web-prod-01 usermod[58228]: add &#x27;sysupdate&#x27; to group &#x27;sudo&#x27;</code></pre></details></div>
+<div class=f style='--sev:var(--high)'><h3><span class=badge>high</span>AH-004 &mdash; Direct SSH login as root</h3><div class=meta><a href='https://attack.mitre.org/techniques/T1078/003/' target=_blank rel=noopener>T1078.003 Valid Accounts: Local Accounts</a> &middot; Privilege Escalation &middot; 2026-10-21 09:54:03 &rarr; 09:54:03</div><p>root logged in over SSH from 203.0.113.77 (password). Direct root login bypasses individual accountability; set PermitRootLogin no.</p><details><summary>Evidence (1 lines)</summary><pre><code>Oct 21 09:54:03 web-prod-01 sshd[49032]: Accepted password for root from 203.0.113.77 port 51999 ssh2</code></pre></details></div>
+<div class=f style='--sev:var(--medium)'><h3><span class=badge>medium</span>AH-001 &mdash; SSH password brute force</h3><div class=meta><a href='https://attack.mitre.org/techniques/T1110/001/' target=_blank rel=noopener>T1110.001 Brute Force: Password Guessing</a> &middot; Credential Access &middot; 2026-10-21 09:40:05 &rarr; 09:42:18</div><p>24 failed SSH logins from 203.0.113.77 against deploy.</p><details><summary>Evidence (24 lines)</summary><pre><code>Oct 21 09:40:05 web-prod-01 sshd[29670]: Failed password for deploy from 203.0.113.77 port 51014 ssh2
+Oct 21 09:40:11 web-prod-01 sshd[62798]: Failed password for deploy from 203.0.113.77 port 55009 ssh2
+Oct 21 09:40:18 web-prod-01 sshd[27371]: Failed password for deploy from 203.0.113.77 port 55585 ssh2
+Oct 21 09:40:25 web-prod-01 sshd[61113]: Failed password for deploy from 203.0.113.77 port 37375 ssh2
+Oct 21 09:40:31 web-prod-01 sshd[29840]: Failed password for deploy from 203.0.113.77 port 59224 ssh2
+Oct 21 09:40:39 web-prod-01 sshd[25917]: Failed password for deploy from 203.0.113.77 port 50858 ssh2
+Oct 21 09:40:43 web-prod-01 sshd[54762]: Failed password for deploy from 203.0.113.77 port 50436 ssh2
+Oct 21 09:40:49 web-prod-01 sshd[49909]: Failed password for deploy from 203.0.113.77 port 54988 ssh2
+Oct 21 09:40:54 web-prod-01 sshd[54288]: Failed password for deploy from 203.0.113.77 port 42629 ssh2
+Oct 21 09:40:57 web-prod-01 sshd[46484]: Failed password for deploy from 203.0.113.77 port 45098 ssh2
+Oct 21 09:40:59 web-prod-01 sshd[6622]: Failed password for deploy from 203.0.113.77 port 41222 ssh2
+Oct 21 09:41:05 web-prod-01 sshd[35548]: Failed password for deploy from 203.0.113.77 port 46112 ssh2
+Oct 21 09:41:13 web-prod-01 sshd[3434]: Failed password for deploy from 203.0.113.77 port 34572 ssh2
+Oct 21 09:41:21 web-prod-01 sshd[42909]: Failed password for deploy from 203.0.113.77 port 36407 ssh2
+Oct 21 09:41:30 web-prod-01 sshd[44712]: Failed password for deploy from 203.0.113.77 port 33725 ssh2
+Oct 21 09:41:35 web-prod-01 sshd[4424]: Failed password for deploy from 203.0.113.77 port 39872 ssh2
+Oct 21 09:41:44 web-prod-01 sshd[47988]: Failed password for deploy from 203.0.113.77 port 55913 ssh2
+Oct 21 09:41:49 web-prod-01 sshd[36059]: Failed password for deploy from 203.0.113.77 port 41654 ssh2
+Oct 21 09:41:56 web-prod-01 sshd[39008]: Failed password for deploy from 203.0.113.77 port 39069 ssh2
+Oct 21 09:41:59 web-prod-01 sshd[57127]: Failed password for deploy from 203.0.113.77 port 52305 ssh2
+Oct 21 09:42:03 web-prod-01 sshd[51484]: Failed password for deploy from 203.0.113.77 port 46574 ssh2
+Oct 21 09:42:05 web-prod-01 sshd[37728]: Failed password for deploy from 203.0.113.77 port 51007 ssh2
+Oct 21 09:42:14 web-prod-01 sshd[2038]: Failed password for deploy from 203.0.113.77 port 39707 ssh2
+Oct 21 09:42:18 web-prod-01 sshd[31533]: Failed password for deploy from 203.0.113.77 port 34854 ssh2</code></pre></details></div>
+<div class=f style='--sev:var(--medium)'><h3><span class=badge>medium</span>AH-007 &mdash; Unauthorized sudo attempts</h3><div class=meta><a href='https://attack.mitre.org/techniques/T1548/003/' target=_blank rel=noopener>T1548.003 Abuse Elevation Control Mechanism: Sudo and Sudo Caching</a> &middot; Privilege Escalation &middot; 2026-10-21 10:05:50 &rarr; 10:07:30</div><p>&#x27;intern&#x27; had 3 failed or denied sudo attempts, including 3 as a user not in sudoers.</p><details><summary>Evidence (3 lines)</summary><pre><code>Oct 21 10:05:50 web-prod-01 sudo:    intern : user NOT in sudoers ; TTY=pts/2 ; PWD=/home/intern ; USER=root ; COMMAND=/usr/bin/id
+Oct 21 10:06:40 web-prod-01 sudo:    intern : user NOT in sudoers ; TTY=pts/2 ; PWD=/home/intern ; USER=root ; COMMAND=/bin/cat /etc/sudoers
+Oct 21 10:07:30 web-prod-01 sudo:    intern : user NOT in sudoers ; TTY=pts/2 ; PWD=/home/intern ; USER=root ; COMMAND=/usr/bin/su -</code></pre></details></div>
+</main></body></html>
