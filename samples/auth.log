@@ -1,0 +1,109 @@
+Oct 21 03:12:04 web-prod-01 sshd[2123]: Invalid user admin from 198.51.100.23 port 52138
+Oct 21 03:12:05 web-prod-01 sshd[42615]: Failed password for invalid user admin from 198.51.100.23 port 52138 ssh2
+Oct 21 03:12:13 web-prod-01 sshd[7854]: Invalid user admin from 198.51.100.23 port 36456
+Oct 21 03:12:14 web-prod-01 sshd[19672]: Failed password for invalid user admin from 198.51.100.23 port 36456 ssh2
+Oct 21 03:12:22 web-prod-01 sshd[50093]: Invalid user admin from 198.51.100.23 port 44821
+Oct 21 03:12:23 web-prod-01 sshd[61065]: Failed password for invalid user admin from 198.51.100.23 port 44821 ssh2
+Oct 21 03:12:35 web-prod-01 sshd[53127]: Invalid user test from 198.51.100.23 port 30408
+Oct 21 03:12:36 web-prod-01 sshd[62398]: Failed password for invalid user test from 198.51.100.23 port 30408 ssh2
+Oct 21 03:12:48 web-prod-01 sshd[38493]: Invalid user test from 198.51.100.23 port 44161
+Oct 21 03:12:49 web-prod-01 sshd[52801]: Failed password for invalid user test from 198.51.100.23 port 44161 ssh2
+Oct 21 03:12:58 web-prod-01 sshd[4003]: Invalid user test from 198.51.100.23 port 48009
+Oct 21 03:12:59 web-prod-01 sshd[51855]: Failed password for invalid user test from 198.51.100.23 port 48009 ssh2
+Oct 21 03:13:10 web-prod-01 sshd[59419]: Invalid user oracle from 198.51.100.23 port 57801
+Oct 21 03:13:11 web-prod-01 sshd[15001]: Failed password for invalid user oracle from 198.51.100.23 port 57801 ssh2
+Oct 21 03:13:18 web-prod-01 sshd[35518]: Invalid user oracle from 198.51.100.23 port 47336
+Oct 21 03:13:19 web-prod-01 sshd[35632]: Failed password for invalid user oracle from 198.51.100.23 port 47336 ssh2
+Oct 21 03:13:26 web-prod-01 sshd[44426]: Invalid user oracle from 198.51.100.23 port 55405
+Oct 21 03:13:27 web-prod-01 sshd[4305]: Failed password for invalid user oracle from 198.51.100.23 port 55405 ssh2
+Oct 21 03:13:44 web-prod-01 sshd[49267]: Invalid user postgres from 198.51.100.23 port 53056
+Oct 21 03:13:45 web-prod-01 sshd[39257]: Failed password for invalid user postgres from 198.51.100.23 port 53056 ssh2
+Oct 21 03:14:01 web-prod-01 sshd[2609]: Invalid user postgres from 198.51.100.23 port 59451
+Oct 21 03:14:02 web-prod-01 sshd[53755]: Failed password for invalid user postgres from 198.51.100.23 port 59451 ssh2
+Oct 21 03:14:20 web-prod-01 sshd[36541]: Invalid user postgres from 198.51.100.23 port 45977
+Oct 21 03:14:21 web-prod-01 sshd[50294]: Failed password for invalid user postgres from 198.51.100.23 port 45977 ssh2
+Oct 21 03:14:34 web-prod-01 sshd[37593]: Invalid user ubuntu from 198.51.100.23 port 54074
+Oct 21 03:14:35 web-prod-01 sshd[53323]: Failed password for invalid user ubuntu from 198.51.100.23 port 54074 ssh2
+Oct 21 03:14:45 web-prod-01 sshd[5377]: Invalid user ubuntu from 198.51.100.23 port 38577
+Oct 21 03:14:46 web-prod-01 sshd[47449]: Failed password for invalid user ubuntu from 198.51.100.23 port 38577 ssh2
+Oct 21 03:14:52 web-prod-01 sshd[60220]: Invalid user ubuntu from 198.51.100.23 port 31930
+Oct 21 03:14:53 web-prod-01 sshd[12148]: Failed password for invalid user ubuntu from 198.51.100.23 port 31930 ssh2
+Oct 21 03:14:57 web-prod-01 sshd[29800]: Invalid user git from 198.51.100.23 port 36287
+Oct 21 03:14:58 web-prod-01 sshd[63433]: Failed password for invalid user git from 198.51.100.23 port 36287 ssh2
+Oct 21 03:15:17 web-prod-01 sshd[17583]: Invalid user git from 198.51.100.23 port 57312
+Oct 21 03:15:18 web-prod-01 sshd[58513]: Failed password for invalid user git from 198.51.100.23 port 57312 ssh2
+Oct 21 03:15:37 web-prod-01 sshd[28987]: Invalid user user from 198.51.100.23 port 34913
+Oct 21 03:15:38 web-prod-01 sshd[23886]: Failed password for invalid user user from 198.51.100.23 port 34913 ssh2
+Oct 21 03:15:41 web-prod-01 sshd[19841]: Invalid user support from 198.51.100.23 port 44088
+Oct 21 03:15:42 web-prod-01 sshd[49567]: Failed password for invalid user support from 198.51.100.23 port 44088 ssh2
+Oct 21 03:15:48 web-prod-01 sshd[42544]: Invalid user support from 198.51.100.23 port 31833
+Oct 21 03:15:49 web-prod-01 sshd[31232]: Failed password for invalid user support from 198.51.100.23 port 31833 ssh2
+Oct 21 03:16:02 web-prod-01 sshd[5483]: Invalid user support from 198.51.100.23 port 42466
+Oct 21 03:16:03 web-prod-01 sshd[14658]: Failed password for invalid user support from 198.51.100.23 port 42466 ssh2
+Oct 21 03:16:13 web-prod-01 sshd[15008]: Invalid user guest from 198.51.100.23 port 53507
+Oct 21 03:16:14 web-prod-01 sshd[13551]: Failed password for invalid user guest from 198.51.100.23 port 53507 ssh2
+Oct 21 03:16:20 web-prod-01 sshd[26681]: Invalid user guest from 198.51.100.23 port 45861
+Oct 21 03:16:21 web-prod-01 sshd[41184]: Failed password for invalid user guest from 198.51.100.23 port 45861 ssh2
+Oct 21 03:16:40 web-prod-01 sshd[11467]: Invalid user ftpuser from 198.51.100.23 port 38286
+Oct 21 03:16:41 web-prod-01 sshd[15512]: Failed password for invalid user ftpuser from 198.51.100.23 port 38286 ssh2
+Oct 21 03:16:53 web-prod-01 sshd[41918]: Invalid user ftpuser from 198.51.100.23 port 42876
+Oct 21 03:16:54 web-prod-01 sshd[13748]: Failed password for invalid user ftpuser from 198.51.100.23 port 42876 ssh2
+Oct 21 03:17:09 web-prod-01 sshd[48048]: Failed password for alice from 198.51.100.23 port 35213 ssh2
+Oct 21 03:17:27 web-prod-01 sshd[46721]: Failed password for alice from 198.51.100.23 port 50380 ssh2
+Oct 21 03:17:40 web-prod-01 sshd[2981]: Failed password for alice from 198.51.100.23 port 31290 ssh2
+Oct 21 08:39:00 web-prod-01 sshd[38419]: Accepted publickey for ivan.petrov from 192.0.2.32 port 51988 ssh2
+Oct 21 08:41:00 web-prod-01 sudo:    ivan.petrov : TTY=pts/0 ; PWD=/home/ivan.petrov ; USER=root ; COMMAND=/usr/bin/journalctl -u nginx
+Oct 21 09:40:05 web-prod-01 sshd[29670]: Failed password for deploy from 203.0.113.77 port 51014 ssh2
+Oct 21 09:40:11 web-prod-01 sshd[62798]: Failed password for deploy from 203.0.113.77 port 55009 ssh2
+Oct 21 09:40:18 web-prod-01 sshd[27371]: Failed password for deploy from 203.0.113.77 port 55585 ssh2
+Oct 21 09:40:25 web-prod-01 sshd[61113]: Failed password for deploy from 203.0.113.77 port 37375 ssh2
+Oct 21 09:40:31 web-prod-01 sshd[29840]: Failed password for deploy from 203.0.113.77 port 59224 ssh2
+Oct 21 09:40:39 web-prod-01 sshd[25917]: Failed password for deploy from 203.0.113.77 port 50858 ssh2
+Oct 21 09:40:43 web-prod-01 sshd[54762]: Failed password for deploy from 203.0.113.77 port 50436 ssh2
+Oct 21 09:40:49 web-prod-01 sshd[49909]: Failed password for deploy from 203.0.113.77 port 54988 ssh2
+Oct 21 09:40:54 web-prod-01 sshd[54288]: Failed password for deploy from 203.0.113.77 port 42629 ssh2
+Oct 21 09:40:57 web-prod-01 sshd[46484]: Failed password for deploy from 203.0.113.77 port 45098 ssh2
+Oct 21 09:40:59 web-prod-01 sshd[6622]: Failed password for deploy from 203.0.113.77 port 41222 ssh2
+Oct 21 09:41:05 web-prod-01 sshd[35548]: Failed password for deploy from 203.0.113.77 port 46112 ssh2
+Oct 21 09:41:13 web-prod-01 sshd[3434]: Failed password for deploy from 203.0.113.77 port 34572 ssh2
+Oct 21 09:41:21 web-prod-01 sshd[42909]: Failed password for deploy from 203.0.113.77 port 36407 ssh2
+Oct 21 09:41:30 web-prod-01 sshd[44712]: Failed password for deploy from 203.0.113.77 port 33725 ssh2
+Oct 21 09:41:35 web-prod-01 sshd[4424]: Failed password for deploy from 203.0.113.77 port 39872 ssh2
+Oct 21 09:41:44 web-prod-01 sshd[47988]: Failed password for deploy from 203.0.113.77 port 55913 ssh2
+Oct 21 09:41:49 web-prod-01 sshd[36059]: Failed password for deploy from 203.0.113.77 port 41654 ssh2
+Oct 21 09:41:56 web-prod-01 sshd[39008]: Failed password for deploy from 203.0.113.77 port 39069 ssh2
+Oct 21 09:41:59 web-prod-01 sshd[57127]: Failed password for deploy from 203.0.113.77 port 52305 ssh2
+Oct 21 09:42:03 web-prod-01 sshd[51484]: Failed password for deploy from 203.0.113.77 port 46574 ssh2
+Oct 21 09:42:05 web-prod-01 sshd[37728]: Failed password for deploy from 203.0.113.77 port 51007 ssh2
+Oct 21 09:42:14 web-prod-01 sshd[2038]: Failed password for deploy from 203.0.113.77 port 39707 ssh2
+Oct 21 09:42:18 web-prod-01 sshd[31533]: Failed password for deploy from 203.0.113.77 port 34854 ssh2
+Oct 21 09:42:23 web-prod-01 sshd[6264]: Accepted password for deploy from 203.0.113.77 port 51515 ssh2
+Oct 21 09:45:23 web-prod-01 sudo:    deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/bin/bash
+Oct 21 09:46:00 web-prod-01 sshd[26146]: Accepted publickey for alice from 192.0.2.34 port 50904 ssh2
+Oct 21 09:46:23 web-prod-01 sudo:    deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow
+Oct 21 09:48:00 web-prod-01 sudo:    alice : TTY=pts/0 ; PWD=/home/alice ; USER=root ; COMMAND=/usr/bin/journalctl -u nginx
+Oct 21 09:48:23 web-prod-01 useradd[60978]: new user: name=sysupdate, UID=998, GID=998, home=/var/lib/sysupdate, shell=/bin/bash, from=/dev/pts/1
+Oct 21 09:49:03 web-prod-01 usermod[58228]: add 'sysupdate' to group 'sudo'
+Oct 21 09:49:03 web-prod-01 usermod[43552]: add 'sysupdate' to shadow group 'sudo'
+Oct 21 09:54:03 web-prod-01 sshd[49032]: Accepted password for root from 203.0.113.77 port 51999 ssh2
+Oct 21 10:05:50 web-prod-01 sudo:    intern : user NOT in sudoers ; TTY=pts/2 ; PWD=/home/intern ; USER=root ; COMMAND=/usr/bin/id
+Oct 21 10:06:40 web-prod-01 sudo:    intern : user NOT in sudoers ; TTY=pts/2 ; PWD=/home/intern ; USER=root ; COMMAND=/bin/cat /etc/sudoers
+Oct 21 10:07:30 web-prod-01 sudo:    intern : user NOT in sudoers ; TTY=pts/2 ; PWD=/home/intern ; USER=root ; COMMAND=/usr/bin/su -
+Oct 21 10:50:00 web-prod-01 sshd[26660]: Accepted publickey for bob from 192.0.2.39 port 50080 ssh2
+Oct 21 10:52:00 web-prod-01 sudo:    bob : TTY=pts/0 ; PWD=/home/bob ; USER=root ; COMMAND=/usr/bin/journalctl -u nginx
+Oct 21 11:13:00 web-prod-01 sshd[8162]: Accepted publickey for ivan.petrov from 192.0.2.37 port 51956 ssh2
+Oct 21 11:15:00 web-prod-01 sudo:    ivan.petrov : TTY=pts/0 ; PWD=/home/ivan.petrov ; USER=root ; COMMAND=/usr/bin/apt update
+Oct 21 12:52:00 web-prod-01 sshd[34121]: Accepted publickey for ivan.petrov from 192.0.2.22 port 42141 ssh2
+Oct 21 12:54:00 web-prod-01 sudo:    ivan.petrov : TTY=pts/0 ; PWD=/home/ivan.petrov ; USER=root ; COMMAND=/usr/bin/journalctl -u nginx
+Oct 21 13:42:00 web-prod-01 sshd[27435]: Accepted publickey for bob from 192.0.2.38 port 53224 ssh2
+Oct 21 13:44:00 web-prod-01 sudo:    bob : TTY=pts/0 ; PWD=/home/bob ; USER=root ; COMMAND=/usr/bin/journalctl -u nginx
+Oct 21 14:51:00 web-prod-01 sshd[55559]: Accepted publickey for bob from 192.0.2.31 port 40584 ssh2
+Oct 21 14:53:00 web-prod-01 sudo:    bob : TTY=pts/0 ; PWD=/home/bob ; USER=root ; COMMAND=/usr/bin/apt update
+Oct 21 15:38:00 web-prod-01 sshd[63754]: Accepted publickey for alice from 192.0.2.24 port 48073 ssh2
+Oct 21 15:40:00 web-prod-01 sudo:    alice : TTY=pts/0 ; PWD=/home/alice ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx
+Oct 21 16:50:00 web-prod-01 sshd[30960]: Accepted publickey for bob from 192.0.2.31 port 59811 ssh2
+Oct 21 16:52:00 web-prod-01 sudo:    bob : TTY=pts/0 ; PWD=/home/bob ; USER=root ; COMMAND=/usr/bin/journalctl -u nginx
+Oct 21 17:16:00 web-prod-01 sshd[42834]: Accepted publickey for alice from 192.0.2.27 port 42205 ssh2
+Oct 21 17:18:00 web-prod-01 sudo:    alice : TTY=pts/0 ; PWD=/home/alice ; USER=root ; COMMAND=/usr/bin/journalctl -u nginx
+Oct 21 18:39:00 web-prod-01 sshd[5734]: Accepted publickey for ivan.petrov from 192.0.2.34 port 41437 ssh2
+Oct 21 18:41:00 web-prod-01 sudo:    ivan.petrov : TTY=pts/0 ; PWD=/home/ivan.petrov ; USER=root ; COMMAND=/usr/bin/apt update
